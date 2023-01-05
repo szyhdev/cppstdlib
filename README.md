@@ -26,22 +26,19 @@ An accompanying Web site, including source code, can be found at www.cppstdlib.c
 Table of Contents
 - Chapter 1. About This Book
 - Chapter 2. Introduction to C++ and the Standard Library
-- Chapter 4. General Concepts
-- Chapter 5. Utilities
-- Chapter 6. The Standard Template Library
-- Chapter 7. STL Containers
-- Chapter 8. STL Container Members in Detail
-- Chapter 9. STL Iterators
-- Chapter 10. STL Function Objects and Using Lambdas
-- Chapter 11. STL Algorithms
-- Chapter 12. Special Containers
-- Chapter 13. Strings
-- Chapter 14. Regular Expressions
-- Chapter 15. Input/Output Using Stream Classes
-- Chapter 16. Internationalization
-- Chapter 17. Numerics
-- Chapter 18. Concurrency
-- Chapter 19. Allocators
+- Chapter 3. General Concepts
+- Chapter 4. Utilities
+- Chapter 5. The Standard Template Library
+- Chapter 6. STL Containers
+- Chapter 7. STL Iterators
+- Chapter 8. STL Functors
+- Chapter 9. STL Algorithms
+- Chapter 10. Special Containers
+- Chapter 11. Strings
+- Chapter 12. Numerics
+- Chapter 13. Input/Output Using Stream Classes
+- Chapter 14. Internationalization
+- Chapter 15. Allocators
 
 Book Details
 - Hardcover: 1128 pages
