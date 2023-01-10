@@ -88,7 +88,7 @@
 
 4）标准程序库抛出的异常
 
-- 标准程序库本身可能抛出rang_error、out_of_range和invalid_argument异常
+- 标准程序库本身可能抛出range_error、out_of_range和invalid_argument异常
 - 由于标准程序库会用到语言特性和程序员编写的代码，因此可能间接地抛出任何异常
 - 标准程序库的具体实现还可能提供额外的非标准异常类型，这可能会带来代码移植方面的问题
 
