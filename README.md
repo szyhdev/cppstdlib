@@ -28,7 +28,7 @@ Table of Contents
 - Chapter 2. Introduction to C++ and the Standard Library
 - Chapter 3. General Concepts
 - Chapter 4. Utilities
-- Chapter 5. The Standard Template Library
+- Chapter 5. Standard Template Library
 - Chapter 6. STL Containers
 - Chapter 7. STL Iterators
 - Chapter 8. STL Functors
