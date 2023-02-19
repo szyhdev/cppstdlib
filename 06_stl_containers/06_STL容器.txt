@@ -296,7 +296,7 @@
 
 4、deque运用实例
 
-- 示例程序展示了assign、push_back、push_front、copy、pop_front、pop_back、size、resize
+- 示例程序展示了deque的成员函数，包括assign、push_back、push_front、copy、pop_front、pop_back、size、resize等
 
 四、list
 
