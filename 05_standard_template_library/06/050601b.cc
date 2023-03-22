@@ -37,7 +37,7 @@ int main()
     cout << "number of removed elements: " <<
             distance(end, coll.end()) << endl;
 
-    // remove ``removed'' elements
+    // remove "removed" elements
     coll.erase(end, coll.end());
 
     // print all elements of the modified collection
@@ -45,4 +45,3 @@ int main()
             ostream_iterator<int>(cout, " "));
     cout << endl;
 }
-

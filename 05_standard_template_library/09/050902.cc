@@ -20,7 +20,7 @@ int main()
     transform(coll1.begin(), coll1.end(),     // source
             back_inserter(coll2),             // destination
             bind2nd(multiplies<int>(), 10));  // operation
-    PRINT_ELEMENTS(coll2,"transformed: ");
+    PRINT_ELEMENTS(coll2, "transformed: ");
 
     // replace value equal to 70 with 42
     replace_if(coll2.begin(), coll2.end(),  // range
@@ -34,4 +34,3 @@ int main()
             coll2.end());
     PRINT_ELEMENTS(coll2, "removed:     ");
 }
-

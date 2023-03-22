@@ -28,4 +28,3 @@ int main()
 
     PRINT_ELEMENTS(coll2, "squared:     ");
 }
-

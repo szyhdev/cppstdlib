@@ -31,9 +31,18 @@ int main()
     // sort all elements
     sort(coll.begin(), coll.end());
 
+    // print all elements
+    for (pos = coll.begin(); pos != coll.end(); ++pos) {
+        cout << *pos << ' ';
+    }
+    cout << endl;
+
     // find the first element with value 3
     pos = find(coll.begin(), coll.end(),  // range
             3);                           // value
+    if (pos != coll.end()) {
+        cout << "3 is found" << endl;
+    }
 
     // reverse the order of the found element with value 3 and all following elements
     reverse(pos, coll.end());
@@ -44,4 +53,3 @@ int main()
     }
     cout << endl;
 }
-

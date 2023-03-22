@@ -36,4 +36,3 @@ int main()
     // copy(coll1.begin(), coll2.end(),  // source
     //         coll1.end());             // destination
 }
-

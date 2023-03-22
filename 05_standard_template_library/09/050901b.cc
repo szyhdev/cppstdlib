@@ -13,7 +13,7 @@ public:
     AddValue(int v) : theValue(v) {
     }
 
-    // the ``function call'' for the element adds the value
+    // the "function call" for the element adds the value
     void operator ()(int& elem) const {
         elem += theValue;
     }
@@ -40,6 +40,5 @@ int main()
     for_each(coll.begin(), coll.end(),  // range
             AddValue(*coll.begin()));   // operation
 
-    PRINT_ELEMENTS(coll,"after adding first element: ");
+    PRINT_ELEMENTS(coll, "after adding first element: ");
 }
-

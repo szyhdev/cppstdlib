@@ -27,8 +27,7 @@ int main()
      */
     StringFloatMap::iterator pos;
     for (pos = coll.begin(); pos != coll.end(); ++pos) {
-        cout << "key: \"" << pos->first << "\" " <<
-                "value: " << pos->second << endl;
+        cout << "key: \"" << pos->first << "\"" <<
+                ", value: " << pos->second << endl;
     }
 }
-

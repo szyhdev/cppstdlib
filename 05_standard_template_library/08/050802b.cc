@@ -14,7 +14,7 @@ private:
 public:
     Person() {
     }
-    Person(const string& f, const string& n) : fn(f), ln(n) {
+    Person(const string &f, const string &n) : fn(f), ln(n) {
     }
     string firstname() const;
     string lastname() const;
@@ -29,16 +29,16 @@ inline string Person::lastname() const {
     return ln;
 }
 
-ostream& operator <<(ostream& s, const Person& p)
+ostream& operator <<(ostream &s, const Person &p)
 {
-    s << "[" << p.firstname() << " " << p.lastname() << "]";
+    s << "(" << p.firstname() << ", " << p.lastname() << ")";
     return s;
 }
 
 /* binary function predicate:
  * - returns whether a person is less than another person
  */
-bool personSortCriterion(const Person& p1, const Person& p2)
+bool personSortCriterion(const Person &p1, const Person &p2)
 {
     /* a person is less than another person
      * - if the last name is less
@@ -58,7 +58,7 @@ int main()
     Person p5("lucas", "otto");
     Person p6("lucas", "arm");
     Person p7("anica", "holle");
-    
+
     // insert person into collection coll
     deque<Person> coll;
     coll.push_back(p1);
@@ -87,4 +87,3 @@ int main()
         cout << *pos << endl;
     }
 }
-

@@ -18,11 +18,20 @@ int main()
      */
     pos = find(coll.begin(), coll.end(),  // range
             3);                           // value
-    
+    if (pos == coll.end()) {
+        cout << "3 is not found" << endl;
+    }
+
     /* reverse the order of elements between found element and the end
      * - because pos is coll.end() it reverses an empty range
      */
     reverse(pos, coll.end());
+
+    // print all elements
+    for (pos = coll.begin(); pos != coll.end(); ++pos) {
+        cout << *pos << ' ';
+    }
+    cout << endl;
 
     // find positions of values 25 and 35
     list<int>::iterator pos25, pos35;
@@ -39,4 +48,3 @@ int main()
     // process the elements including the last position
     cout << "max: " << *max_element(pos25, ++pos35) << endl;
 }
-

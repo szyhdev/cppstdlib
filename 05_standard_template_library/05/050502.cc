@@ -16,6 +16,7 @@ int main()
     copy(istream_iterator<string>(cin),  // start of source
             istream_iterator<string>(),  // end of source
             back_inserter(coll));        // destination
+    cout << endl;
 
     // sort elements
     sort(coll.begin(), coll.end());
@@ -27,4 +28,3 @@ int main()
     unique_copy(coll.begin(), coll.end(),           // source
             ostream_iterator<string>(cout, "\n"));  // destination
 }
-

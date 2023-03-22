@@ -23,4 +23,3 @@ int main()
             print);                     // operation
     cout << endl;
 }
-

@@ -1,10 +1,11 @@
 #include <iostream>
 #include <set>
+using namespace std;
 
 int main()
 {
     // type of the collection
-    typedef std::set<int> IntSet;
+    typedef set<int> IntSet;
 
     IntSet coll;  // set container for int values
 
@@ -24,8 +25,7 @@ int main()
      */
     IntSet::const_iterator pos;
     for (pos = coll.begin(); pos != coll.end(); ++pos) {
-        std::cout << *pos << ' ';
+        cout << *pos << ' ';
     }
-    std::cout << std::endl;
+    cout << endl;
 }
-
