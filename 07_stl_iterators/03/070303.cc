@@ -25,4 +25,3 @@ int main()
 
     PRINT_ELEMENTS(coll);
 }
-

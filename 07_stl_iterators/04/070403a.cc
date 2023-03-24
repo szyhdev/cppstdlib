@@ -31,4 +31,3 @@ int main()
     copy(coll.begin(), coll.end(), ostream_iterator<int>(cout, " < "));
     cout << endl;
 }
-

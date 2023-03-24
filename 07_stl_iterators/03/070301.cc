@@ -29,4 +29,3 @@ int main()
     // print actual element
     cout << *pos << endl;
 }
-

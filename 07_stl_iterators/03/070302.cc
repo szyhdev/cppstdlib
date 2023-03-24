@@ -26,4 +26,3 @@ int main()
         cout << "5 not found" << endl;
     }
 }
-

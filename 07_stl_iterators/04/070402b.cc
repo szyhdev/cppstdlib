@@ -18,20 +18,16 @@ int main()
     *iter = 2;
     iter++;
     *iter = 3;
-
     PRINT_ELEMENTS(coll);
 
     // create front inserter and insert elements
     // - convenient way
     front_inserter(coll) = 44;
     front_inserter(coll) = 55;
-
     PRINT_ELEMENTS(coll);
 
     // use front inserter to insert all elements again
     copy(coll.begin(), coll.end(),  // source
             front_inserter(coll));  // destination
-
     PRINT_ELEMENTS(coll);
 }
-

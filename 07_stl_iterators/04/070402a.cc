@@ -33,4 +33,3 @@ int main()
             back_inserter(coll));   // destination
     PRINT_ELEMENTS(coll);
 }
-

@@ -6,7 +6,7 @@
  * - separated by spaces
  */
 template <class T>
-inline void PRINT_ELEMENTS(const T& coll, const char* optcstr = "")
+inline void PRINT_ELEMENTS(const T &coll, const char *optcstr = "")
 {
     typename T::const_iterator pos;
 
@@ -16,4 +16,3 @@ inline void PRINT_ELEMENTS(const T& coll, const char* optcstr = "")
     }
     std::cout << std::endl;
 }
-

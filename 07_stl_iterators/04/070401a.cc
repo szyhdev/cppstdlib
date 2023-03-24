@@ -27,4 +27,3 @@ int main()
             print);                       // operations
     cout << endl;
 }
-
