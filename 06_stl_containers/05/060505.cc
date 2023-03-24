@@ -13,17 +13,17 @@ public:
     };
 private:
     cmp_mode mode;
-public:  
+public:
     // constructor for sorting criterion
     // - default criterion uses value normal
     RuntimeCmp(cmp_mode m = normal) : mode(m) {
     }
     // comparison of elements
-    bool operator ()(const T& t1, const T& t2) const {
+    bool operator ()(const T &t1, const T &t2) const {
         return mode == normal ? t1 < t2 : t2 < t1;
     }
     // comparison of sorting criteria
-    bool operator ==(const RuntimeCmp& rc) {
+    bool operator ==(const RuntimeCmp &rc) {
         return mode == rc.mode;
     }
 };
@@ -32,7 +32,7 @@ public:
 typedef set<int, RuntimeCmp<int>> IntSet;
 
 // forward declaration
-void fill(IntSet& set);
+void fill(IntSet &set);
 
 int main()
 {
@@ -64,7 +64,7 @@ int main()
     }
 }
 
-void fill(IntSet& set)
+void fill(IntSet &set)
 {
     // fill insert elements in random order
     set.insert(4);
@@ -75,4 +75,3 @@ void fill(IntSet& set)
     set.insert(2);
     set.insert(5);
 }
-

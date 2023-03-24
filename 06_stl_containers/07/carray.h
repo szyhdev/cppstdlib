@@ -1,18 +1,18 @@
 #include <cstddef>
 
-template<class T, std::size_t thesize>
+template <class T, std::size_t thesize>
 class carray {
 private:
     T v[thesize];  // fixed-size array of elements of type T
 
 public:
     // type definitions
-    typedef T        value_type;
-    typedef T*       iterator;
-    typedef const T* const_iterator;
-    typedef T&       reference;
-    typedef const T& const_reference;
-    typedef std::size_t    size_type;
+    typedef T value_type;
+    typedef T *iterator;
+    typedef const T *const_iterator;
+    typedef T &reference;
+    typedef const T &const_reference;
+    typedef std::size_t size_type;
     typedef std::ptrdiff_t difference_type;
 
     // iterator support
@@ -30,6 +30,5 @@ public:
     size_type max_size() const { return thesize; }
 
     // conversion to ordinary array
-    T* as_array() { return v; }
+    T *as_array() { return v; }
 };
-

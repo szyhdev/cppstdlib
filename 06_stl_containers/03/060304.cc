@@ -24,7 +24,7 @@ int main()
     coll.pop_front();
     coll.pop_back();
 
-    // insert ``another'' into every element but the first
+    // insert "another" into every element but the first
     for (unsigned i = 1; i < coll.size(); ++i) {
         coll[i] = "another " + coll[i];
     }
@@ -36,4 +36,3 @@ int main()
     copy(coll.begin(), coll.end(),
             ostream_iterator<string>(cout, "\n"));
 }
-

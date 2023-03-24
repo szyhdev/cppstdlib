@@ -37,7 +37,7 @@ int main()
 
     // assign elements to another multiset with ascending order
     multiset<int> coll2(coll1.begin(), coll1.end());
-    
+
     // print all elements of the copy
     copy(coll2.begin(), coll2.end(),
             ostream_iterator<int>(cout, " "));
@@ -56,4 +56,3 @@ int main()
             ostream_iterator<int>(cout, " "));
     cout << endl;
 }
-

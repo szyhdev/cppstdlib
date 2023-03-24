@@ -21,4 +21,3 @@ int main()
             negate<int>());        // operation
     PRINT_ELEMENTS(a);
 }
-

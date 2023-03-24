@@ -9,6 +9,7 @@ int main()
 {
     // create empty vector for strings
     vector<string> sentence;
+    vector<string> sentence2;
 
     // reserve memory for five elements to avoid reallocation
     sentence.reserve(5);
@@ -25,9 +26,9 @@ int main()
             ostream_iterator<string>(cout, " "));
     cout << endl;
 
-    // print ``technical data''
+    // print "technical data"
     cout << "  max_size(): " << sentence.max_size() << endl;
-    cout << "  size():     " << sentence.size()     << endl;
+    cout << "  size():     " << sentence.size() << endl;
     cout << "  capacity(): " << sentence.capacity() << endl;
 
     // swap second and fourth element
@@ -38,15 +39,14 @@ int main()
 
     // assign "!" to the last element
     sentence.back() = "!";
-    
+
     // print elements separated with spaces
     copy(sentence.begin(), sentence.end(),
             ostream_iterator<string>(cout, " "));
     cout << endl;
 
-    // print ``technical data'' again
+    // print "technical data" again
     cout << "  max_size(): " << sentence.max_size() << endl;
-    cout << "  size():     " << sentence.size()     << endl;
+    cout << "  size():     " << sentence.size() << endl;
     cout << "  capacity(): " << sentence.capacity() << endl;
 }
-

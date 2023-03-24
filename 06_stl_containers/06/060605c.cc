@@ -11,7 +11,7 @@ private:
     V value;
 public:
     // constructor (initialize value to compare with)
-    value_equals (const V& v) : value(v) {
+    value_equals (const V &v) : value(v) {
     }
     // comparison
     bool operator ()(pair<const K, V> elem) {
@@ -47,4 +47,3 @@ int main()
         cout << pos->first << ": " << pos->second << endl;
     }
 }
-

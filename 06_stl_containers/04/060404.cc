@@ -4,13 +4,17 @@
 #include <iterator>
 using namespace std;
 
-void printLists(const list<int>& l1, const list<int>& l2)
+void printLists(const list<int> &l1, const list<int> &l2)
 {
     cout << "list1: ";
     copy(l1.begin(), l1.end(), ostream_iterator<int>(cout, " "));
-    cout << endl << "list2: ";
+    cout << endl;
+    cout << "list2: ";
     copy(l2.begin(), l2.end(), ostream_iterator<int>(cout, " "));
-    cout << endl << endl;
+    cout << endl;
+    if (!l2.empty()) {
+        cout << endl;
+    }
 }
 
 int main()
@@ -47,4 +51,3 @@ int main()
     list1.merge(list2);
     printLists(list1, list2);
 }
-

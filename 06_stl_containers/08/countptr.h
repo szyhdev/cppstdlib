@@ -8,17 +8,17 @@
 template <class T>
 class CountedPtr {
 private:
-    T* ptr;       // pointer to the value
-    long* count;  // shared number of owners
+    T *ptr;       // pointer to the value
+    long *count;  // shared number of owners
 
 public:
     // initialize pointer with existing pointer
     // - requires that the pointer p is a return value of new
-    explicit CountedPtr(T* p = 0) : ptr(p), count(new long(1)) {
+    explicit CountedPtr(T *p = 0) : ptr(p), count(new long(1)) {
     }
 
     // copy pointer (one more owner)
-    CountedPtr(const CountedPtr<T>& p) throw() : ptr(p.ptr), count(p.count) {
+    CountedPtr(const CountedPtr<T> &p) throw() : ptr(p.ptr), count(p.count) {
         ++*count;
     }
 
@@ -28,7 +28,7 @@ public:
     }
 
     // assignment (unshare old and share new value)
-    CountedPtr<T>& operator =(const CountedPtr<T>& p) throw() {
+    CountedPtr<T> &operator =(const CountedPtr<T> &p) throw() {
         if (this != &p) {
             dispose();
             ptr = p.ptr;
@@ -39,10 +39,10 @@ public:
     }
 
     // access the value to which the pointer refers
-    T& operator *() const throw() {
+    T &operator *() const throw() {
         return *ptr;
     }
-    T* operator ->() const throw() {
+    T *operator ->() const throw() {
         return ptr;
     }
 
@@ -56,4 +56,3 @@ private:
 };
 
 #endif
-

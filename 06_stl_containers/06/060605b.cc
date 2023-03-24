@@ -27,10 +27,10 @@ int main()
     StrStrMMap::iterator pos;
     cout.setf(ios::left, ios::adjustfield);
     cout << ' ' << setw(10) << "english " << "german " << endl;
-    cout << setfill('-') << setw(20) << "" << setfill(' ') << endl;
+    cout << setfill('-') << setw(22) << "" << setfill(' ') << endl;
     for (pos = dict.begin(); pos != dict.end(); ++pos) {
         cout << ' ' << setw(10) << pos->first.c_str() <<
-               	pos->second << endl;
+                pos->second << endl;
     }
     cout << endl;
 
@@ -50,4 +50,3 @@ int main()
         }
     }
 }
-

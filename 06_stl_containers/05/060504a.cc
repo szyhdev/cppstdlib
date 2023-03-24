@@ -11,7 +11,7 @@ int main()
      * - elements are integral values
      * - descending order
      */
-    typedef set<int, greater<int> > IntSet;
+    typedef set<int, greater<int>> IntSet;
 
     IntSet coll1;  // empty set container
 
@@ -42,7 +42,7 @@ int main()
 
     // assign elements to another set with ascending order
     set<int> coll2(coll1.begin(), coll1.end());
-    
+
     // print all elements of the copy
     copy(coll2.begin(), coll2.end(),
             ostream_iterator<int>(cout, " "));
@@ -61,4 +61,3 @@ int main()
             ostream_iterator<int>(cout, " "));
     cout << endl;
 }
-

@@ -25,13 +25,13 @@ private:
         return toupper(c1) < toupper(c2);
     }
 
-public:  
+public:
     // constructor: initializes the comparison criterion
     RuntimeStringCmp(cmp_mode m = normal) : mode(m) {
     }
 
     // the comparison
-    bool operator ()(const string& s1, const string& s2) const {
+    bool operator ()(const string &s1, const string &s2) const {
         if (mode == normal) {
             return s1 < s2;
         }
@@ -45,9 +45,9 @@ public:
 
 /* container type:
  * - map with
- *       - string keys
- *       - string values
- *       - the special comparison object type
+ *   - string keys
+ *   - string values
+ *   - the special comparison object type
  */
 typedef map<string, string, RuntimeStringCmp> StringStringMap;
 
@@ -59,6 +59,7 @@ int main()
     // create a container with the default comparison criterion
     StringStringMap coll1;
     fillAndPrint(coll1);
+    cout << endl;
 
     // create an object for case-insensitive comparisons
     RuntimeStringCmp ignorecase(RuntimeStringCmp::nocase);
@@ -68,7 +69,7 @@ int main()
     fillAndPrint(coll2);
 }
 
-void fillAndPrint(StringStringMap& coll)
+void fillAndPrint(StringStringMap &coll)
 {
     // fill insert elements in random order
     coll["Deutschland"] = "Germany";
@@ -87,8 +88,6 @@ void fillAndPrint(StringStringMap& coll)
     cout.setf(ios::left, ios::adjustfield);
     for (pos = coll.begin(); pos != coll.end(); ++pos) {
         cout << setw(15) << pos->first.c_str() << " " <<
-               	pos->second << endl;
+                pos->second << endl;
     }
-    cout << endl;
 }
-
