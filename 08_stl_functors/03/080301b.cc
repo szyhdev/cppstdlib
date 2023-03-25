@@ -23,9 +23,8 @@ int main()
             compose_f_gx_hx(logical_and<bool>(),
             bind2nd(greater<int>(), 4), bind2nd(less<int>(), 7)));
 
-    // remove ``removed'' elements in coll
+    // remove "removed" elements in coll
     coll.erase(pos, coll.end());
 
     PRINT_ELEMENTS(coll);
 }
-

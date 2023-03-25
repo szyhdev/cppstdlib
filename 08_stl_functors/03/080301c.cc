@@ -21,4 +21,3 @@ int main()
         cout << "\"" << sub << "\" is part of \"" << s << "\"" << endl;
     }
 }
-

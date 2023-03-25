@@ -24,7 +24,7 @@ int main()
     for (int i = 1; i <= 9; ++i) {
         coll.push_back(i);
     }
-    PRINT_ELEMENTS(coll, "coll:        ");
+    PRINT_ELEMENTS(coll, "coll:           ");
 
     // remove third element
     list<int>::iterator pos;
@@ -32,6 +32,5 @@ int main()
             Nth(3));                           // remove criterion
     coll.erase(pos, coll.end());
 
-    PRINT_ELEMENTS(coll,"nth removed: ");
+    PRINT_ELEMENTS(coll,"nth(3) removed: ");
 }
-

@@ -14,7 +14,7 @@ private:
 public:
     Person() {
     }
-    Person(const string& f, const string& n) : fn(f), ln(n) {
+    Person(const string &f, const string &l) : fn(f), ln(l) {
     }
     string firstname() const;
     string lastname() const;
@@ -29,7 +29,7 @@ inline string Person::lastname() const {
     return ln;
 }
 
-ostream& operator <<(ostream& s, const Person& p)
+ostream &operator <<(ostream &s, const Person &p)
 {
     s << "[" << p.firstname() << " " << p.lastname() << "]";
     return s;
@@ -40,7 +40,7 @@ ostream& operator <<(ostream& s, const Person& p)
  */
 class PersonSortCriterion {
 public:
-    bool operator ()(const Person& p1, const Person& p2) const {
+    bool operator ()(const Person &p1, const Person &p2) const {
         /* a person is less than another person
          * - if the last name is less
          * - if the last name is equal and the first name is less
@@ -81,4 +81,3 @@ int main()
         cout << *pos << endl;
     }
 }
-

@@ -23,4 +23,3 @@ int main()
             compose_f_gx(bind2nd(multiplies<int>(), 5), bind2nd(plus<int>(), 10)));
     cout << endl;
 }
-

@@ -12,7 +12,7 @@ public:
     IntSequence(int initialValue) : value(initialValue) {
     }
 
-    // ''function call''
+    // "function call"
     int operator ()() {
         return value++;
     }
@@ -36,4 +36,3 @@ int main()
 
     PRINT_ELEMENTS(coll);
 }
-

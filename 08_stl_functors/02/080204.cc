@@ -28,4 +28,3 @@ int main()
             bind2nd(fopow<float, int>(), 3));    // operation
     cout << endl;
 }
-

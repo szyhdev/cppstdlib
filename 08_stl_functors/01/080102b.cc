@@ -12,7 +12,7 @@ public:
     IntSequence (int initialValue) : value(initialValue) {
     }
 
-    // ''function call''
+    // "function call"
     int operator ()() {
         return value++;
     }
@@ -26,7 +26,7 @@ int main()
     // insert values from 1 to 4
     // - pass function object by reference
     //     so that it will continue with 5
-    generate_n<back_insert_iterator<list<int>>, int, IntSequence&>(
+    generate_n<back_insert_iterator<list<int>>, int, IntSequence &>(
             back_inserter(coll),  // start
             4,                    // number of elements
             seq);                 // generates values
@@ -45,11 +45,10 @@ int main()
             4,                       // number of elements
             seq);                    // generates values
     PRINT_ELEMENTS(coll);
-    
+
     // continue with first sequence again
     generate_n(back_inserter(coll),  // start
             4,                       // number of elements
             seq);                    // generates values
     PRINT_ELEMENTS(coll);
 }
-

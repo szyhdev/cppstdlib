@@ -3,25 +3,26 @@
 #include <string>
 #include <algorithm>
 #include <functional>
+using namespace std;
 
 class Person {
 private:
-    std::string name;
+    string name;
 public:
     Person() {
     }
-    Person(const std::string& n) : name(n) {
+    Person(const string &n) : name(n) {
     }
     //...
     void print() const {
-        std::cout << name << std::endl;
+        cout << name << endl;
     }
-    void printWithPrefix(std::string prefix) const {
-        std::cout << prefix << name << std::endl;
+    void printWithPrefix(string prefix) const {
+        cout << prefix << name << endl;
     }
 };
 
-void foo(const std::vector<Person>& coll)
+void foo(const vector<Person> &coll)
 {
     using std::for_each;
     using std::bind2nd;
@@ -37,7 +38,7 @@ void foo(const std::vector<Person>& coll)
             bind2nd(mem_fun_ref(&Person::printWithPrefix), "person: "));
 }
 
-void ptrfoo(const std::vector<Person*>& coll)  // ^^^ pointer !
+void ptrfoo(const vector<Person *> &coll)  // pointer!
 {
     using std::for_each;
     using std::bind2nd;
@@ -55,20 +56,19 @@ void ptrfoo(const std::vector<Person*>& coll)  // ^^^ pointer !
 
 int main()
 {
-    std::vector<Person> coll;
+    vector<Person> coll;
 
     Person p1("nicolai");
     Person p2("ulli");
     Person p3("anica");
-
     coll.push_back(p1);
     coll.push_back(p2);
     coll.push_back(p3);
 
     foo(coll);
-    std::cout << std::endl;
+    cout << endl;
 
-    std::vector<Person*> coll2;
+    vector<Person *> coll2;
 
     coll2.push_back(new Person("nicolai"));
     coll2.push_back(new Person("ulli"));
@@ -80,4 +80,3 @@ int main()
         delete p;
     }
 }
-

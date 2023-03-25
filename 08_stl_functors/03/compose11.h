@@ -11,12 +11,12 @@ private:
     OP2 op2;
 public:
     // constructor
-    compose_f_gx_t(const OP1& o1, const OP2& o2) : op1(o1), op2(o2) {
+    compose_f_gx_t(const OP1 &o1, const OP2 &o2) : op1(o1), op2(o2) {
     }
 
     // function call
     typename OP1::result_type
-    operator ()(const typename OP2::argument_type& x) const {
+    operator ()(const typename OP2::argument_type &x) const {
         return op1(op2(x));
     }
 };
@@ -24,8 +24,7 @@ public:
 /* convenience function for the compose_f_gx adapter
  */
 template <class OP1, class OP2>
-inline compose_f_gx_t<OP1,OP2>
-compose_f_gx(const OP1& o1, const OP2& o2) {
-    return compose_f_gx_t<OP1,OP2>(o1, o2);
+inline compose_f_gx_t<OP1, OP2>
+compose_f_gx(const OP1 &o1, const OP2 &o2) {
+    return compose_f_gx_t<OP1, OP2>(o1, o2);
 }
-

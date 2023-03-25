@@ -13,7 +13,7 @@ public:
     MeanValue() : num(0), sum(0) {
     }
 
-    // ''function call''
+    // "function call"
     // - process one more element of the sequence
     void operator ()(int elem) {
         num++;        // increment count
@@ -40,4 +40,3 @@ int main()
             MeanValue());                              // operation
     cout << "mean value: " << mv.value() << endl;
 }
-
