@@ -26,4 +26,3 @@ int main()
             coll.end());                        // end of range
     PRINT_ELEMENTS(coll, "4 first:   ");
 }
-

@@ -8,11 +8,11 @@ private:
     T theValue;    // value to add
 public:
     // constructor initializes the value to add
-    AddValue(const T& v) : theValue(v) {
+    AddValue(const T &v) : theValue(v) {
     }
 
     // the function call for the element adds the value
-    void operator ()(T& elem) const {
+    void operator ()(T &elem) const {
         elem += theValue;
     }
 };
@@ -32,4 +32,3 @@ int main()
             AddValue<int>(*coll.begin()));  // operation
     PRINT_ELEMENTS(coll);
 }
-

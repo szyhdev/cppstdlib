@@ -20,5 +20,6 @@ int main()
     reverse_copy(coll.begin(), coll.end(),      // source
             ostream_iterator<int>(cout, " "));  // destination
     cout << endl;
-}
 
+    PRINT_ELEMENTS(coll, "coll: ");
+}

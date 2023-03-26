@@ -36,4 +36,3 @@ int main()
             ostream_iterator<int>(cout, " "));  // destination
     cout << endl;
 }
-

@@ -26,4 +26,3 @@ int main()
             coll2.rbegin());                       // second range
     PRINT_ELEMENTS(coll2, "\ncoll2: ");
 }
-

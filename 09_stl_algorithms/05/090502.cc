@@ -25,4 +25,3 @@ int main()
     cout << "maximum of absolute values: " <<
             *max_element(coll.begin(), coll.end(), absLess) << endl;
 }
-

@@ -30,4 +30,3 @@ int main()
 
     PRINT_ELEMENTS(coll1);
 }
-

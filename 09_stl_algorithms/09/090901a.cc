@@ -20,4 +20,3 @@ int main()
 
     PRINT_ELEMENTS(coll, "sorted >: ");
 }
-

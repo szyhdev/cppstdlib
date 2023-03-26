@@ -20,7 +20,7 @@ int main()
 
     // count elements with even value
     num = count_if(coll.begin(), coll.end(),    // range
-            isEven);                         // criterion
+            isEven);                            // criterion
             // not1(bind2nd(modulus<int>(), 2)));  // criterion
     cout << "number of elements with even value: " << num << endl;
 
@@ -29,4 +29,3 @@ int main()
             bind2nd(greater<int>(), 4));      // criterion
     cout << "number of elements greater than 4:  " << num << endl;
 }
-

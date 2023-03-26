@@ -23,8 +23,7 @@ int main()
     coll.insert(lower_bound(coll.begin(), coll.end(), 3), 3);
 
     // insert 7 at the last possible position without breaking the sorting
-    coll.insert(upper_bound(coll.begin(),coll.end(), 7), 7);
+    coll.insert(upper_bound(coll.begin(), coll.end(), 7), 7);
 
     PRINT_ELEMENTS(coll);
 }
-

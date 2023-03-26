@@ -29,5 +29,6 @@ int main()
             bind2nd(modulus<int>(), 2),        // replacement criterion
             0);                                // new value
     cout << endl;
-}
 
+    PRINT_ELEMENTS(coll);
+}

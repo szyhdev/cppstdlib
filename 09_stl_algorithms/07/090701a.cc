@@ -17,7 +17,7 @@ int main()
 
     PRINT_ELEMENTS(coll, "size not changed:   ");
 
-    // erase the ``removed'' elements in the container
+    // erase the "removed" elements in the container
     coll.erase(pos, coll.end());
     PRINT_ELEMENTS(coll, "size changed:       ");
 
@@ -27,4 +27,3 @@ int main()
             coll.end());
     PRINT_ELEMENTS(coll, "<4 removed:         ");
 }
-

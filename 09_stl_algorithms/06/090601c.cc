@@ -10,4 +10,3 @@ int main()
             istream_iterator<string>(),             // end of source
             ostream_iterator<string>(cout, "\n"));  // destination
 }
-

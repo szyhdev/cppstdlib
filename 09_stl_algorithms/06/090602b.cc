@@ -33,4 +33,3 @@ int main()
             minus<int>());                     // operation
     cout << endl;
 }
-

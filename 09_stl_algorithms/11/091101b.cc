@@ -34,4 +34,3 @@ int main()
             multiplies<int>(),                       // outer operation
             plus<int>()) << endl;                    // inner operation
 }
-

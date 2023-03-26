@@ -19,4 +19,3 @@ int main()
             multiplies<int>());               // operation
     cout << endl;
 }
-

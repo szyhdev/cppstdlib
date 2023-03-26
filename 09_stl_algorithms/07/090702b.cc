@@ -14,8 +14,8 @@ int main()
 
     // initialize coll with elements from source
     list<int> coll;
-    copy(source, source+sourceNum,  // source
-            back_inserter(coll));   // destination
+    copy(source, source + sourceNum,  // source
+            back_inserter(coll));     // destination
     PRINT_ELEMENTS(coll);
 
     // print elements with consecutive duplicates removed
@@ -28,5 +28,6 @@ int main()
             ostream_iterator<int>(cout, " "),  // destination
             differenceOne);                    // duplicates criterion
     cout << endl;
-}
 
+    PRINT_ELEMENTS(coll);
+}

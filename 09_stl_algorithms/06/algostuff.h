@@ -19,7 +19,7 @@
  * - separated by spaces
  */
 template <class T>
-inline void PRINT_ELEMENTS(const T& coll, const char* optcstr = "")
+inline void PRINT_ELEMENTS(const T &coll, const char *optcstr = "")
 {
     typename T::const_iterator pos;
 
@@ -35,7 +35,7 @@ inline void PRINT_ELEMENTS(const T& coll, const char* optcstr = "")
  * - NOTE: NO half-open range
  */
 template <class T>
-inline void INSERT_ELEMENTS(T& coll, int first, int last)
+inline void INSERT_ELEMENTS(T &coll, int first, int last)
 {
     for (int i = first; i <= last; ++i) {
         coll.insert(coll.end(), i);
@@ -43,4 +43,3 @@ inline void INSERT_ELEMENTS(T& coll, int first, int last)
 }
 
 #endif
-

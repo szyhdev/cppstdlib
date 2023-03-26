@@ -34,4 +34,3 @@ int main()
     }
     PRINT_ELEMENTS(coll, "afterward: ");
 }
-

@@ -22,4 +22,3 @@ int main()
         cout << "42 is not present" << endl;
     }
 }
-

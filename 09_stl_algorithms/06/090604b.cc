@@ -17,4 +17,3 @@ int main()
             rand);                      // new value generator
     PRINT_ELEMENTS(coll);
 }
-

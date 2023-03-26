@@ -31,4 +31,3 @@ int main()
             ostream_iterator<int>(cout, " "));  // destination range
     cout << endl;
 }
-

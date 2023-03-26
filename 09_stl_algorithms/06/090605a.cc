@@ -21,4 +21,3 @@ int main()
             0);                           // new value
     PRINT_ELEMENTS(coll, "coll: ");
 }
-

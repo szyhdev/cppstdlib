@@ -36,4 +36,3 @@ int main()
             "hmmm");      // new value
     PRINT_ELEMENTS(coll, "coll: ");
 }
-

@@ -18,9 +18,8 @@ int main()
     if (pos != coll.end()) {
         cout << "four consecutive elements with value 3 " <<
                 "start with No. " << distance(coll.begin(), pos) + 1 <<
-               	" element" << endl;
-    }
-    else {
+                " element" << endl;
+    } else {
         cout << "no four consecutive elements with value 3 found" << endl;
     }
 
@@ -33,10 +32,9 @@ int main()
     // print result
     if (pos != coll.end()) {
         cout << "four consecutive elements with value > 3 " <<
-               	"start with No. " << distance(coll.begin(), pos) + 1 <<
-               	" element" << endl;
+                "start with No. " << distance(coll.begin(), pos) + 1 <<
+                " element" << endl;
     } else {
         cout << "no four consecutive elements with value > 3 found" << endl;
     }
 }
-

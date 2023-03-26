@@ -27,4 +27,3 @@ int main()
             negate<int>());                    // operation
     cout << endl;
 }
-

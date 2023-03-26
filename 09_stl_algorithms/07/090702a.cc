@@ -35,4 +35,3 @@ int main()
             coll.end());
     PRINT_ELEMENTS(coll);
 }
-

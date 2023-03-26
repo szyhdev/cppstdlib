@@ -43,4 +43,3 @@ int main()
     set_symmetric_difference(c1, c1 + num1, c2, c2+num2, ostream_iterator<int>(cout, " "));
     cout << endl;
 }
-

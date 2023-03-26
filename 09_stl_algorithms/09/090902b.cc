@@ -32,4 +32,3 @@ int main()
     copy(coll30.begin(), pos30, ostream_iterator<int>(cout, " "));
     cout << endl;
 }
-

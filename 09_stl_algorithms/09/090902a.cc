@@ -29,4 +29,3 @@ int main()
             coll.end());        // end of full range
     PRINT_ELEMENTS(coll);
 }
-

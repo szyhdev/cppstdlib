@@ -25,4 +25,3 @@ int main()
     cout << "the No. " << distance(coll.begin(), pos) + 1 <<
             " element is the first divisible by 3" << endl;
 }
-

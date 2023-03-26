@@ -29,9 +29,7 @@ int main()
             coll2.begin(),                 // second range
             bothEvenOrOdd)) {              // comparison criterion
         cout << "even and odd elements correspond" << endl;
-    }
-    else {
+    } else {
         cout << "even and odd elements do not correspond" << endl;
     }
 }
-

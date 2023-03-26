@@ -1,12 +1,12 @@
 #include "algostuff.h"
 using namespace std;
 
-void printCollection(const list<int>& l)
+void printCollection(const list<int> &l)
 {
     PRINT_ELEMENTS(l);
 }
 
-bool lessForCollection(const list<int>& l1, const list<int>& l2)
+bool lessForCollection(const list<int> &l1, const list<int> &l2)
 {
     return lexicographical_compare
             (l1.begin(), l1.end(),  // first range
@@ -50,4 +50,3 @@ int main()
     // print all collections again
     for_each(cc.begin(), cc.end(), printCollection);
 }
-

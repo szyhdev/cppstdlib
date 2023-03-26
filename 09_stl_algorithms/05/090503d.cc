@@ -21,7 +21,7 @@ int main()
     while (pos != coll.end()) {
         // print position of first element
         cout << "subcoll found starting with element No. " <<
-               	distance(coll.begin(), pos) + 1 << endl;
+                distance(coll.begin(), pos) + 1 << endl;
 
         // search next occurrence of subcoll
         ++pos;
@@ -29,4 +29,3 @@ int main()
                 subcoll.begin(), subcoll.end());  // subrange
     }
 }
-

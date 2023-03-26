@@ -26,4 +26,3 @@ int main()
             0,                                                   // initial value
             multiplies<int>()) << endl;                          // operation
 }
-

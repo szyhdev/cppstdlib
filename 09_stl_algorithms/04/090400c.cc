@@ -34,4 +34,3 @@ int main()
             MeanValue());                           // operation
     cout << "mean value: " << mv << endl;
 }
-

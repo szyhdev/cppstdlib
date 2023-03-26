@@ -1,7 +1,7 @@
 #include "algostuff.h"
 using namespace std;
 
-bool lessLength(const string& s1, const string& s2)
+bool lessLength(const string &s1, const string &s2)
 {
     return s1.length() < s2.length();
 }
@@ -42,4 +42,3 @@ int main()
     PRINT_ELEMENTS(coll1, "\nwith sort():\n ");
     PRINT_ELEMENTS(coll2, "\nwith stable_sort():\n ");
 }
-

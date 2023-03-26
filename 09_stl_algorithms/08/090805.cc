@@ -26,4 +26,3 @@ int main()
     PRINT_ELEMENTS(coll2, "coll2: ");
     cout << "first odd element: " << *pos2 << endl;
 }
-

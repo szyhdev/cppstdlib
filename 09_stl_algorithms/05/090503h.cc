@@ -2,7 +2,7 @@
 using namespace std;
 
 // return whether the second object has double the value of the first
-bool doubled (int elem1, int elem2)
+bool doubled(int elem1, int elem2)
 {
     return elem1 * 2 == elem2;
 }
@@ -26,7 +26,7 @@ int main()
     pos = adjacent_find(coll.begin(), coll.end());
     if (pos != coll.end()) {
         cout << "first two elements with equal value have position " <<
-               	distance(coll.begin(), pos) + 1 << endl;
+                distance(coll.begin(), pos) + 1 << endl;
     }
 
     // search first two elements for which the second has double the value of the first
@@ -35,7 +35,6 @@ int main()
 
     if (pos != coll.end()) {
         cout << "first two elements with second value twice the " <<
-               	"first have position " << distance(coll.begin(), pos) + 1 << endl;
+                "first have position " << distance(coll.begin(), pos) + 1 << endl;
     }
 }
-

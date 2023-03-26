@@ -22,4 +22,3 @@ int main()
         cout << "not all elements of search are also in coll" << endl;
     }
 }
-

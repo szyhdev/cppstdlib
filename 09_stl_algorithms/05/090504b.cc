@@ -21,10 +21,9 @@ int main()
             coll2.begin());                        // second range
     if (values.first == coll1.end()) {
         cout << "no mismatch" << endl;
-    }
-    else {
+    } else {
         cout << "first mismatch: " << *values.first  << " and " <<
-               	*values.second << endl;
+                *values.second << endl;
     }
 
     /* find first position where the element of coll1 is not
@@ -35,10 +34,8 @@ int main()
             less_equal<int>());                    // criterion
     if (values.first == coll1.end()) {
         cout << "always less-or-equal" << endl;
-    }
-    else {
+    } else {
         cout << "not less-or-equal: " << *values.first << " and " <<
-               	*values.second << endl;
+                *values.second << endl;
     }
 }
-

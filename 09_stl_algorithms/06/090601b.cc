@@ -24,4 +24,3 @@ int main()
             c2.begin() + 19);                        // destination range
     PRINT_ELEMENTS(c2, "c2:     ");
 }
-

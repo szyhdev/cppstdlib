@@ -6,8 +6,7 @@ bool checkEven(int elem, bool even)
 {
     if (even) {
         return elem % 2 == 0;
-    }
-    else {
+    } else {
         return elem % 2 == 1;
     }
 }
@@ -19,7 +18,7 @@ int main()
     PRINT_ELEMENTS(coll, "coll: ");
 
     /* arguments for checkEven()
-     * - check for: ``even odd even''
+     * - check for: "even odd even"
      */
     bool checkEvenArgs[3] = { true, false, true };
 
@@ -33,7 +32,7 @@ int main()
     while (pos != coll.end()) {
         // print position of first element
         cout << "subrange found starting with element No. " <<
-               	distance(coll.begin(), pos) + 1 << endl;
+                distance(coll.begin(), pos) + 1 << endl;
 
         // search next subrange in coll
         pos = search(++pos, coll.end(),            // range
@@ -41,4 +40,3 @@ int main()
                 checkEven);                        // subrange criterion
     }
 }
-

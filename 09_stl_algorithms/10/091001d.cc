@@ -19,4 +19,3 @@ int main()
             " up to " << distance(coll.begin(), range.second) + 1 <<
             " without breaking the sorting" << endl;
 }
-

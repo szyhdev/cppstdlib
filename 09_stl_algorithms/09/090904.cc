@@ -35,4 +35,3 @@ int main()
 
     PRINT_ELEMENTS(coll, "after sort_heap():  ");
 }
-
