@@ -8,7 +8,7 @@ using namespace std;
  * - print object value or NULL
  */
 template <class T>
-ostream& operator <<(ostream& strm, const auto_ptr<T>& p)
+ostream& operator <<(ostream &strm, const auto_ptr<T> &p)
 {
     // does p own an object ?
     if (p.get() == NULL) {
@@ -34,10 +34,9 @@ int main()
     cout << " p: " << p << endl;
     cout << " q: " << q << endl;
 
-    *q += 13;                   // change value of the object q owns
+    *q += 13;  // change value of the object q owns
     p = q;
     cout << "after change and reassignment:" << endl;
     cout << " p: " << p << endl;
     cout << " q: " << q << endl;
 }
-

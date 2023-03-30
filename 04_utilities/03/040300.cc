@@ -32,4 +32,3 @@ int main()
     cout << "is_specialized(string): " <<
             numeric_limits<string>::is_specialized << endl;
 }
-

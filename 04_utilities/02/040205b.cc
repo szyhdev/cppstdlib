@@ -8,7 +8,7 @@ using namespace std;
  * - print object value or NULL
  */
 template <class T>
-ostream& operator <<(ostream& strm, const auto_ptr<T>& p)
+ostream& operator <<(ostream &strm, const auto_ptr<T> &p)
 {
     // does p own an object ?
     if (p.get() == NULL) {
@@ -42,4 +42,3 @@ int main()
     // q = p;  // ERROR at compile time
     // r = p;  // ERROR at compile time
 }
-
