@@ -1,16 +1,20 @@
 #include <iostream>
 #include <list>
 #include <algorithm>
-#include "print.h"
+
+#include "../05_standard_template_library/0700_print.hpp"
+
 using namespace std;
 
 class Nth {  // function object that returns true for the nth call
 private:
     int nth;    // call for which to return true
     int count;  // call counter
+
 public:
     Nth(int n) : nth(n), count(0) {
     }
+
     bool operator ()(int) {
         return ++count == nth;
     }
@@ -33,4 +37,6 @@ int main()
     coll.erase(pos, coll.end());
 
     PRINT_ELEMENTS(coll, "nth(3) removed: ");
+
+    return 0;
 }
