@@ -4,7 +4,7 @@
  */
 template <class OP1, class OP2, class OP3>
 class compose_f_gx_hy_t
- : public std::binary_function<typename OP2::argument_type, typename OP3::argument_type, typename OP1::result_type>
+    : public std::binary_function<typename OP2::argument_type, typename OP3::argument_type, typename OP1::result_type>
 {
 private:
     OP1 op1;  // process: op1(op2(x), op3(y))
