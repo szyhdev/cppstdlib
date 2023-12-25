@@ -20,7 +20,7 @@ int main()
     list<int>::iterator pos2;
     if (pos1 != coll.end()) {
         pos2 = find(++pos1, coll.end(),  // range
-            4);                          // value
+                4);                      // value
     }
 
     /* print all elements from first to second 4 (both included)
