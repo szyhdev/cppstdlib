@@ -21,7 +21,7 @@ int main()
     // print elements with consecutive duplicates removed
     unique_copy(coll.begin(), coll.end(),       // source
             ostream_iterator<int>(cout, " "));  // destination
-    cout << endl;
+    cout << endl << endl;
 
     // print elements without consecutive entries that differ by one
     unique_copy(coll.begin(), coll.end(),      // source
