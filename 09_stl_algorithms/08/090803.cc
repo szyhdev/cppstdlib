@@ -14,7 +14,10 @@ int main()
     while (next_permutation(coll.begin(), coll.end())) {
         PRINT_ELEMENTS(coll, " ");
     }
+
     PRINT_ELEMENTS(coll, "afterward: ");
+
+    cout << endl;
 
     /* permute until descending sorted
      * - this is the next permutation after ascending sorting
@@ -23,6 +26,7 @@ int main()
     while (prev_permutation(coll.begin(), coll.end())) {
         PRINT_ELEMENTS(coll, " ");
     }
+
     PRINT_ELEMENTS(coll, "now:       ");
 
     /* permute elements until they are sorted in descending order
@@ -32,5 +36,6 @@ int main()
     while (prev_permutation(coll.begin(), coll.end())) {
         PRINT_ELEMENTS(coll, " ");
     }
+
     PRINT_ELEMENTS(coll, "afterward: ");
 }
