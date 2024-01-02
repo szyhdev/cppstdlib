@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
     /* for each command-line argument
      * (which is an ordinary C-string)
      */
-    for (int i=1; i<argc; ++i) {
+    for (int i = 1; i < argc; ++i) {
         // process argument as file name
         filename = argv[i];
 
@@ -19,8 +19,7 @@ int main(int argc, char* argv[])
         if (idx == string::npos) {
             // file name does not contain any period
             tmpname = filename + '.' + suffix;
-        }
-        else {
+        } else {
             /* split file name into base name and extension
              * - base name contains all characters before the period
              * - extension contains all characters after the period
@@ -31,13 +30,11 @@ int main(int argc, char* argv[])
                 // contains period but no extension: append tmp
                 tmpname = filename;
                 tmpname += suffix;
-            }
-            else if (extname == suffix) {
+            } else if (extname == suffix) {
                 // replace extension tmp with xxx
                 tmpname = filename;
                 tmpname.replace(idx + 1, extname.size(), "xxx");
-            }
-            else {
+            } else {
                 // replace any extension with tmp
                 tmpname = filename;
                 tmpname.replace(idx + 1, string::npos, suffix);
