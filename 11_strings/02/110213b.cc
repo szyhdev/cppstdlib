@@ -19,8 +19,7 @@ int main()
                 s2.begin(),          // second source string
                 nocase_compare)) {   // comparison criterion
         cout << "the strings are equal" << endl;
-    }
-    else {
+    } else {
         cout << "the strings are not equal" << endl;
     }
 
@@ -31,10 +30,9 @@ int main()
             nocase_compare);            // comparison criterion
     if (pos == s1.end()) {
         cout << "s2 is not a substring of s1" << endl;
-    }
-    else {
+    } else {
         cout << '"' << s2 << "\" is a substring of \"" <<
-               	s1 << "\" (at index " << pos - s1.begin() << ")" << endl;
+                s1 << "\" (at index " << pos - s1.begin() << ")" << endl;
     }
 }
 
