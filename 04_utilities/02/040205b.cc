@@ -13,8 +13,7 @@ ostream& operator <<(ostream &strm, const auto_ptr<T> &p)
     // does p own an object ?
     if (p.get() == NULL) {
         strm << "NULL";  // NO: print NULL
-    }
-    else {
+    } else {
         strm << *p;      // YES: print the object
     }
     return strm;
