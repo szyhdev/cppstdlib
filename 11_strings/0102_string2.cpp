@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(int argc, char** argv)
+int main()
 {
     const string delims(" \t,.;");
     string line;
