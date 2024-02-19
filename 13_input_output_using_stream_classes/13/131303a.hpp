@@ -1,7 +1,6 @@
 #include <streambuf>
 #include <locale>
 #include <cstdio>
-#include <unistd.h>
 
 class outbuf : public std::streambuf
 {
