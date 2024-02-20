@@ -1,5 +1,5 @@
 #include <iostream>
-#include "131200.hpp"
+#include "frac.hpp"
 
 inline std::istream &operator >>(std::istream &strm, Fraction &f)
 {
