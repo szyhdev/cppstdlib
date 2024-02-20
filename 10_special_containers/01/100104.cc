@@ -1,5 +1,5 @@
 #include <iostream>
-#include "100104.hpp"  // use special stack class
+#include "stack.h"  // use special stack class
 using namespace std;
 
 int main()
